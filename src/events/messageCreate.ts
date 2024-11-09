@@ -1,13 +1,13 @@
 import commandOptionsChecker from "../structures/commandOptions/processor.js";
-import { PREFIX } from "../config.js";
+import { BOT_PREFIX } from "../config.js";
 import { ClientEvent, MessageCommand } from "../types.js";
 import { DiscordClient, Message } from "discord.js";
 
 export const Event: ClientEvent = {
     name: "messageCreate",
     run: (message: Message, client: DiscordClient): void => {
-        if (!Array.isArray(PREFIX)) return;
-        PREFIX.forEach(async(botPrefix: string) => {
+        if (!Array.isArray(BOT_PREFIX)) return;
+        BOT_PREFIX.forEach(async(botPrefix: string) => {
             if (!message.content.startsWith(botPrefix)) return;
             const commandName: string = message.content.toLowerCase().slice(botPrefix.length).trim().split(" ")[0];
             const command: MessageCommand | undefined = client.messageCommands?.get(commandName) ?? client.messageCommands?.get(client.messageCommands_Aliases?.get(commandName) ?? "");
