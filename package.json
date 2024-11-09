@@ -1,7 +1,7 @@
 {
-  "name": "discordbot-template-ts",
-  "version": "1.0.7",
-  "description": "TypeScript version of DiscordBot-Template",
+  "name": "beepyboopy",
+  "version": "1.0.0",
+  "description": "BeepyBoopy Discord bot",
   "main": "./src/bot.ts",
   "type": "module",
   "scripts": {
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rilecraft/discordbot-template-ts.git"
+    "url": "git+https://github.com/JowiAoun/BeepyBoopy"
   },
-  "author": "RileCraft",
+  "author": "Jowi Aoun",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rilecraft/discordbot-template-ts/issues"
+    "url": "https://github.com/JowiAoun/BeepyBoopy/issues"
   },
-  "homepage": "https://github.com/rilecraft/discordbot-template-ts#readme",
+  "homepage": "https://github.com/JowiAoun/BeepyBoopy#readme",
   "dependencies": {
     "discord.js": "^14.14.1",
     "ms": "^2.1.3",
