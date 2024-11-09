@@ -5,8 +5,8 @@
   "main": "./src/bot.ts",
   "type": "module",
   "scripts": {
-    "build": "tsc && echo 'Finishing Building'",
-    "start": "node ./dist/bot.js"
+    "build": "tsc",
+    "start": "npm run build & node ./dist/bot.js"
   },
   "repository": {
     "type": "git",

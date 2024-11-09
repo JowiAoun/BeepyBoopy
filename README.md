@@ -98,9 +98,9 @@ For detailed documentation on command options and managers, please refer to the 
 To get started with the Discord Bot Template, follow these steps:
 
 1. Clone the repository by downloading it as a ZIP file or running the command `git clone https://github.com/rilecraft/discordbot-template-ts`.
-2. Navigate to the template's directory and run the command `npm install` (make sure npm is installed).
+2. Navigate to the template's directory and run the command `npm i` (make sure npm is installed).
 3. Once all the required modules are installed, open the `src/config.ts` file and fill in the necessary information.
-4. Run the command `npm run build && npm run start` to start the bot.
+4. Run the command `npm start` to build & start the bot.
 
 ## Contribution
 
