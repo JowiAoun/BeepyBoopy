@@ -1,3 +1,6 @@
-export const BOT_PREFIX: Array<string> = ["Bot Prefix"];
-export const BOT_TOKEN: string = "Bot Token";
-export const OWNER_IDS: Array<string> = ["Bot Owner Discord ID"];
+import dotenv from 'dotenv';
+dotenv.config();
+
+export const BOT_PREFIX: string[] = process.env.BOT_PREFIX ? process.env.BOT_PREFIX.split(',') : [];
+export const BOT_TOKEN: string = process.env.BOT_TOKEN || '';
+export const OWNER_IDS: string[] = process.env.OWNER_IDS ? process.env.OWNER_IDS.split(',') : [];
